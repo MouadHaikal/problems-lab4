@@ -1,8 +1,6 @@
 package recordemo;
 
 public record Circle(double radius) {
-
-
     // Instance method to calculate area
     public double area() {
         return Math.PI * radius * radius;
