@@ -1,7 +1,6 @@
 package recordemo;
 
 public record WeatherData(double temperatureCelsius, String conditions) {
-
     // Instance method to convert Celsius to Fahrenheit
     public double temperatureFahrenheit() {
         return temperatureCelsius * 9 / 5 + 32;
@@ -22,6 +21,6 @@ public record WeatherData(double temperatureCelsius, String conditions) {
         WeatherData yesterday = fromFahrenheit(50.f, "Cloudy");
 
         System.out.println("Today's weather: " + today.getSummary());
-        System.out.println("Yesterday's weather: " + today.getSummary());
+        System.out.println("Yesterday's weather: " + yesterday.getSummary());
     }
 }
